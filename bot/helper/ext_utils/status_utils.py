@@ -275,14 +275,14 @@ async def get_readable_message(
             )
             msg += (
                 f"\n<b>⏩</b> {get_progress_bar_string(progress)} » <b><i>{progress}</i></b>"
-                f"\n<b><code>┠ Trạng thái :</code></b> <b>{tstatus}</b>"
-                f"\n<b><code>┠ Tiến độ    :</code> {task.processed_bytes()} of {task.size()}"
-                f"\n<b><code>┠ Tốc độ     :</code> {task.speed()}"
-                f"\n<b><code>┠ Dự kiến    :</code> {task.eta()}"
-                f"\n<b><code>┠ Đã qua     :</code> {elapsed}"
-                f"\n<b><code>┠ Người dùng :</code> <b>{user_tag}</b>"
-                f"\n<b><code>┠ Tải lên    :</code> {task.listener.mode}"
-                f"\n<b><code>┖ Engine     :</code> <b><i>{task.engine}</i></b>"
+                f"\n<b>┠ Trạng thái :</code> <b>{tstatus}</b>"
+                f"\n<b>┠ Tiến độ    :</b> {task.processed_bytes()} of {task.size()}"
+                f"\n<b>┠ Tốc độ     :</b> {task.speed()}"
+                f"\n<b>┠ Dự kiến    :</b> {task.eta()}"
+                f"\n<b>┠ Đã qua     :</b> {elapsed}"
+                f"\n<b>┠ Người dùng :</b> </b>{user_tag}</b>"
+                f"\n<b>┠ Tải lên    :</b> {task.listener.mode}"
+                f"\n<b>┖ Engine     :</b> <b><i>{task.engine}</i></b>"
             )
             if hasattr(
                 task,
