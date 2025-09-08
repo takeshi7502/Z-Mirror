@@ -84,7 +84,7 @@ class Mirror(TaskListener):
     async def new_event(self):
         self.pmsg = await send_message(
             self.message,
-            "Processing your request..."
+            "Chờ xíu bro..."
         )
         try:
             text = (
